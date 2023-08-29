@@ -875,7 +875,7 @@ Private Keys corresponding to CA Keys MUST be stored in accordance with BR Secti
 
 #### 6.2.7.2 Private key storage for Timestamp Authorities
 
-A Timestamp Authority MUST protect Private Keys associated with its Root CA and Subordinate CA certificates in offline Hardware Crypto Module conforming to FIPS 140-2 level 3, Common Criteria EAL 4+ (ALC_FLR.2), or higher. The Timestamp Authority MUST protect its signing operations in accordance with the CA/Browser Forum's Network and Certificate System Security Requirements.
+A Timestamp Authority MUST protect Private Keys associated with its Root CA certificates and Subordinate CA certificates containing the "Time Stamping" EKU in offline Hardware Crypto Module conforming to FIPS 140-2 level 3, Common Criteria EAL 4+ (ALC_FLR.2), or higher. The Timestamp Authority MUST protect its signing operations in accordance with the CA/Browser Forum's Network and Certificate System Security Requirements.
 
 #### 6.2.7.3 Private key storage for Signing Services
 
