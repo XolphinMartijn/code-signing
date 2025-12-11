@@ -1,14 +1,14 @@
 ---
 title: Baseline Requirements for the Issuance and Management of Publicly-Trusted Code Signing Certificates
 
-subtitle: Version 3.9.0
+subtitle: Version 3.X.0
 
 author:
   - CA/Browser Forum
-date: August 1, 2024
+date: X X, 202X
 
 copyright: |
-  Copyright 2024 CA/Browser Forum
+  Copyright 2025 CA/Browser Forum
 
   This work is licensed under the Creative Commons Attribution 4.0 International license.
 ---
@@ -23,13 +23,15 @@ The scope of these Requirements includes all "Code Signing Certificates", as def
 
 The primary goal of these Requirements is to enable trusted signing of code intended for public distribution, while addressing user concerns about the trustworthiness of signed objects and accurately identifying the software publisher. The Requirements also serve to inform users about the purpose of signed code, help users make informed decisions when relying on Certificates, help establish the legitimacy of signed code, help maintain the trustworthiness of software Platforms, help users make informed software choices, and limit the spread of malware. Code Signing Certificates do not identify a particular software object, identifying only the publisher of software.
 
+Prior to XXXX-XX-XX, the CA SHALL adhere to these Requirements or Version 3.9.0 of the Baseline Requirements for Code Signing Certificates. Effective XXXX-XX-XX, the CA SHALL adhere to these Requirements.
+
 ## 1.2 Document name and identification
 
-The following Certificate Policy Identifier is reserved for use by CAs as a required means of asserting compliance with these Requirements for Non-EV Code Signing Certificates: 
+The following Certificate Policy Identifier is reserved for use by CAs as a required means of asserting compliance with these Requirements for Code Signing Certificates: 
 
 `{joint-iso-itu-t(2) international-organizations(23) ca-browser-forum(140) certificate-policies(1) code-signing-requirements(4) code signing(1)} (2.23.140.1.4.1)`.
 
-The following Certificate Policy Identifier is reserved for use by CAs as a required means of asserting compliance with these Requirements for EV Code Signing Certificates follows:
+For certificates issued prior to XXXX-XX-XX, the following Certificate Policy Identifier is reserved for use by CAs as a required means of asserting compliance with these Requirements for EV Code Signing Certificates follows:
 
 `{joint-iso-itu-t(2) international-organizations(23) ca-browser-forum(140) certificate-policies(1) code-signing-requirements(3)}(2.23.140.1.3)`.
 
@@ -64,7 +66,7 @@ The following Certificate Policy Identifier is reserved for use by CAs as a requ
 
 ### 1.2.2 Relevant Dates
 
-| **Compliance** | **Section(s)** | **Summary Description (See Full Text for Details)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| **Compliance** | **Section(s)** | **Summary Description (See Full Text for Details)**    |
 |----------------|----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2021-06-01     | 6.1.5          | CAs SHALL support minimum RSA-3072 for Code Signing Certificates, Root Certificates and Subordinate CA Certificates. CAs SHALL NOT support SHA-1 digest algorithm for Code Signing Certificates.                                                                                                                                                                                                                                                                                                                                                                                                   |
 | 2021-06-01     | 5.3            | After 2021-06-01, the CA shall meet the requirements of EV Guidelines Section 14.1 for Non-EV and EV Code Signing Certificates.                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -201,9 +203,9 @@ Capitalized Terms are as defined below and in the EV SSL Guidelines:
 **Certificate Approver**: A natural person who is either the Applicant, employed by the Applicant, or an authorized agent who has express authority to represent the Applicant to
 
   1. act as a Certificate Requester and to authorize other employees or third parties to act as a Certificate Requester, and
-  2. to approve EV Code Signing Certificate Requests submitted by other Certificate Requesters.
+  2. to approve Code Signing Certificate Requests submitted by other Certificate Requesters.
 
-**Certificate Requester**: A natural person who is either the Applicant, employed by the Applicant, an authorized agent who has express authority to represent the Applicant, or a third party (such as an ISP or hosting company) that completes and submits an EV Code Signing Certificate Request on behalf of the Applicant.
+**Certificate Requester**: A natural person who is either the Applicant, employed by the Applicant, an authorized agent who has express authority to represent the Applicant, or a third party (such as an ISP or hosting company) that completes and submits an Code Signing Certificate Request on behalf of the Applicant.
 
 **Confirmation Request**: An appropriate out-of-band communication requesting verification or confirmation of the particular fact at issue.
 
@@ -263,13 +265,13 @@ Capitalized Terms are as defined below and in the EV SSL Guidelines:
 
 **Demand Deposit Account**: A deposit account held at a bank or other financial institution, the funds deposited in which are payable on demand. The primary purpose of demand accounts is to facilitate cashless payments by means of check, bank draft, direct debit, electronic funds transfer, etc. Usage varies among countries, but a demand deposit account is commonly known as a share draft account, a current account, or a checking account.
 
-**EV Authority**: A source other than the Certificate Approver, through which verification occurs that the Certificate Approver is expressly authorized by the Applicant, as of the date of the EV Code Signing Certificate Request, to take the Request actions described in these Guidelines.
+**Authority**: A source other than the Certificate Approver, through which verification occurs that the Certificate Approver is expressly authorized by the Applicant, as of the date of the Code Signing Certificate Request, to take the Request actions described in these Guidelines.
 
-**EV Code Signing Certificate Request**: A request from an Applicant to the CA requesting that the CA issue an EV Code Signing Certificate to the Applicant, which request is validly authorized by the Applicant and signed by the Applicant Representative.
+**Code Signing Certificate Request**: A request from an Applicant to the CA requesting that the CA issue an Code Signing Certificate to the Applicant, which request is validly authorized by the Applicant and signed by the Applicant Representative.
 
-**EV Code Signing Certificate:** A Code Signing Certificate that contains subject information specified in these Guidelines for Extended Validation and that has been validated in accordance with these Guidelines for Extended Validation.
+**Code Signing Certificate:** A Code Signing Certificate that contains subject information specified in these Guidelines for Extended Validation and that has been validated in accordance with these Guidelines for Extended Validation.
 
-**EV Processes**: The keys, software, processes, and procedures by which the CA verifies Certificate Data under the EV Code Signing Certificate policy, issues EV Code Signing Certificates, maintains a Repository, and revokes EV Code Signing Certificates.
+**Processes**: The keys, software, processes, and procedures by which the CA verifies Certificate Data under the Code Signing Certificate policy, issues Code Signing Certificates, maintains a Repository, and revokes Code Signing Certificates.
 
 **Government Agency**: In the context of a Private Organization, the government agency in the Jurisdiction of Incorporation under whose authority the legal existence of Private Organizations is established (e.g., the government agency that issued the Certificate of Incorporation).  In the context of Business Entities, the government agency in the jurisdiction of operation that registers business entities.  In the case of a Government Entity, the entity that enacts law, regulations, or decrees establishing the legal existence of Government Entities.
 
@@ -307,15 +309,13 @@ Capitalized Terms are as defined below and in the EV SSL Guidelines:
 
 **Latin Notary**: A person with legal training whose commission under applicable law not only includes authority to authenticate the execution of a signature on a document but also responsibility for the correctness and content of the document. A Latin Notary is sometimes referred to as a Civil Law Notary.
 
-**Legal Entity**: An association, corporation, partnership, proprietorship, trust, government entity or other entity with legal standing in a country's legal system. In the EV context, it is a Private Organization, Government Entity, Business Entity, or Non-Commercial Entity.
+**Legal Entity**: An association, corporation, partnership, proprietorship, trust, government entity or other entity with legal standing in a country's legal system. It is a Private Organization, Government Entity, Business Entity, or Non-Commercial Entity.
 
 **Legal Existence**: A Private Organization, Government Entity, or Business Entity has Legal Existence if it has been validly formed and not otherwise terminated, dissolved, or abandoned.
 
 **Legal Practitioner**: A person who is either a lawyer or a Latin Notary as described in these Guidelines and competent to render an opinion on factual claims of the Applicant.
 
 **Lifetime Signing OID:** An optional extended key usage OID (`1.3.6.1.4.1.311.10.3.13`) used by Microsoft Authenticode to limit the lifetime of the code signature to the expiration of the code signing certificate.
-
-**Non-EV Code Signing Certificate:** Term used to signify requirements that are applicable to Code Signing Certificates which do not have to meet the EV requirements.
 
 **Notary**: A person whose commission under applicable law includes authority to authenticate the execution of a signature on a document.
 
@@ -333,7 +333,7 @@ Capitalized Terms are as defined below and in the EV SSL Guidelines:
 
 **Platform:** The computing environment in which an Application Software Supplier uses Code Signing Certificates, incorporates Root Certificates, and adopts these Requirements.
 
-**Principal Individual**: An individual of a Private Organization, Government Entity, or Business Entity that is either an owner, partner, managing member, director, or officer, as identified by their title of employment, or an employee, contractor or agent authorized by such entity or organization to conduct business related to the request, issuance, and use of EV Code Signing Certificates.
+**Principal Individual**: An individual of a Private Organization, Government Entity, or Business Entity that is either an owner, partner, managing member, director, or officer, as identified by their title of employment, or an employee, contractor or agent authorized by such entity or organization to conduct business related to the request, issuance, and use of Code Signing Certificates.
 
 **Private Key**: The key of a Key Pair that is kept secret by the holder of the Key Pair, and that is used to create Digital Signatures and/or to decrypt electronic records or files that were encrypted with the corresponding Public Key.
 
@@ -437,8 +437,7 @@ Capitalized Terms are as defined below and in the EV SSL Guidelines:
 | CPS         | Certification Practice Statement                               |
 | CRL         | Certificate Revocation List                                    |
 | CSO         | Chief Security Officer                                         |
-| DBA         | Doing Business As                                              |
-| EV          | Extended Validation                                            |
+| DBA         | Doing Business As                                              |                                        |
 | FIPS        | (US Government) Federal Information Processing Standard        |
 | IFAC        | International Federation of Accountants                        |
 | IRS         | Internal Revenue Service                                       |
@@ -465,8 +464,6 @@ FIPS 140-2, Federal Information Processing Standards Publication - Security Requ
 FIPS 140-3, Federal Information Processing Standards Publication - Security Requirements For Cryptographic Modules, Information Technology Laboratory, National Institute of Standards and Technology, March 22, 2019.
 
 FIPS 186-4, Federal Information Processing Standards Publication - Digital Signature Standard (DSS), Information Technology Laboratory, National Institute of Standards and Technology, July 2013.
-
-Guidelines for the Issuance and Management of Extended Validation Certificates, Version 1.7.2, available at https://cabforum.org/wp-content/uploads/CA-Browser-Forum-EV-Guidelines-v1.7.2.pdf.
 
 ISO 21188:2006, Public key infrastructure for financial services -- Practices and policy framework.
 
